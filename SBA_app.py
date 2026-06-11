@@ -81,7 +81,7 @@ MAP_RESIDENCE = {"Milieu urbain":1,"Milieu rural":2}
 MAP_REGION = {
     "Adamaoua":1, "Centre (sans Yaounde)":2, "Douala":3, "Est":4,
     "Extreme-Nord":5, "Littoral (sans Douala)":6, "Nord":7,
-    "Nord-Oust":8, "Ouest":9, "Sud":10, "Sud-Ouest":11, "Yaounde":12
+    "Nord-Ouest":8, "Ouest":9, "Sud":10, "Sud-Ouest":11, "Yaounde":12
 }
 
 MAP_EDUC = {"Aucune instruction":0,"Niveau primaire":1,
