@@ -181,7 +181,7 @@ def zone_risque(prob_sba1: float, classe: int = 1):
         return ("Risque élevé", "rouge",
                 "🔴 Risque élevé d'accouchement sans assistance qualifiée. Intervention prioritaire recommandée.")
     else:
-        if prob_sba1 >= 85:
+        if prob_sba1 >= 70:
             return ("Faible risque", "vert",
                     "🟢 Forte probabilité d'accouchement avec assistance qualifiée.")
         else:
