@@ -81,7 +81,7 @@ MAP_RESIDENCE = {"Milieu urbain":1,"Milieu rural":2}
 MAP_REGION = {
     "Adamaoua":1, "Centre (sans Yaounde)":2, "Douala":3, "Est":4,
     "Extreme-Nord":5, "Littoral (sans Douala)":6, "Nord":7,
-    "Nord-Oust":8, "Ouest":9, "Sud":10, "Sud-Ouest":11, "Yaounde":12
+    "Nord-Ouest":8, "Ouest":9, "Sud":10, "Sud-Ouest":11, "Yaounde":12
 }
 
 MAP_EDUC = {"Aucune instruction":0,"Niveau primaire":1,
@@ -181,7 +181,7 @@ def zone_risque(prob_sba1: float, classe: int = 1):
         return ("Risque élevé", "rouge",
                 "🔴 Risque élevé d'accouchement sans assistance qualifiée. Intervention prioritaire recommandée.")
     else:
-        if prob_sba1 >= 85:
+        if prob_sba1 >= 70:
             return ("Faible risque", "vert",
                     "🟢 Forte probabilité d'accouchement avec assistance qualifiée.")
         else:

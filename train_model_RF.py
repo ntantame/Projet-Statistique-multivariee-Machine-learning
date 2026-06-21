@@ -94,9 +94,11 @@ X_train, X_test, y_train, y_test = train_test_split(
 print("[6/7] Entraînement Random Forest avec GridSearchCV...")
 
 param_grid = {
-    'n_estimators': [200, 300],
-    'max_depth': [None, 15, 20],
-    'min_samples_split': [2, 5],
+    'n_estimators': [100, 200, 300],           
+    'max_depth': [10, 15, 20, None],            
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 5],             
+    'max_features': ['sqrt', 'log2', None],     
     'class_weight': ['balanced', 'balanced_subsample']
 }
 
